@@ -20,6 +20,7 @@ Heroku create
 //Push whole program to heroku
 git commit -am "Upload whole program"
 git push heroku master
+git push -f heroku master
 
 //Update database on heroku
 heroku run rails db:migrate
@@ -27,3 +28,7 @@ heroku run rails db:migrate
 //Normal push to heroku
 git commit -am "XXXXX"
 git push heroku
+
+//precompile
+rake assets:precompile
+NODE_ENV=production RAILS_ENV=production rails assets:precompile --trace
