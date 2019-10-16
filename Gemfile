@@ -13,6 +13,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'bootstrap-sass', '3.3.7'
 gem 'font-awesome-rails'
+gem 'aws-sdk', '~> 2'
+gem 'httparty'
+gem 'news-api'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
