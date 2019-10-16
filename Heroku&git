@@ -1,0 +1,29 @@
+//Gitbucket for Assignment
+ git remote rm origin
+ git remote add origin git@bitbucket.org:Hin97/ruby_project.git
+ 
+ 
+//To check current remote
+ git remote -v
+ 
+//Heroku for Assignment
+ git remote rm heroku
+heroku git:remote -a damp-bayou-86764
+ this is for sample app:quiet-reaches-68767
+ 
+//Code to install heroku
+source <(curl -sL https://cdn.learnenough.com/heroku_install)
+
+//Create heroku repo
+Heroku create
+
+//Push whole program to heroku
+git commit -am "Upload whole program"
+git push heroku master
+
+//Update database on heroku
+heroku run rails db:migrate
+
+//Normal push to heroku
+git commit -am "XXXXX"
+git push heroku
