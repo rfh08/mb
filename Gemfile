@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.5.7'   
 gem 'rails',        '5.1.6'
 gem 'bcrypt',       '3.1.12'
 gem 'puma',         '3.9.1'
@@ -13,6 +14,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'bootstrap-sass', '3.3.7'
 gem 'font-awesome-rails'
+gem 'aws-sdk', '~> 2'
+gem 'fog',          '1.36.0'
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
